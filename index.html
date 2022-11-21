@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démineur web</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="hub">
+        <h1>Welcome to the minesweeper</h1>
+        <form id="menu-form">
+
+            <label for="size">Choose a grid size:</label>
+            <select name="size" id="select-size">
+                <option value="tiny">Tiny</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="gigantic">Gigantic</option>
+            </select>
+
+            <label for="difficulty">Choose a difficulty level:</label>
+            <select name="difficulty" id="select-difficulty">
+                <option value="veryeasy">Very easy</option>
+                <option value="easy">Easy</option>
+                <option value="hard">Hard</option>
+                <option value="veryhard">Very hard</option>
+            </select>
+
+            <input type="submit" value="Play" id="submit-menu" />
+        </form>
+    </div>
+    <main id="root">
+        <div id="info">
+            <h1><span id="timer"></span> | <span id="message">Welcome to minesweeper</span></h1>
+        </div>
+        <div id="grid">
+
+        </div>
+    </main>
+</body>
+</html>
